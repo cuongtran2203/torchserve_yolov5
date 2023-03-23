@@ -1,1 +1,1 @@
-torchserve --start --model-store service/model-store --models Cuong2203=Cuong2203.mar --ts-config service/config.properties
+torchserve --start --model-store model-store --models Cuong2203=Cuong2203.mar --ts-config config.properties
