@@ -4,6 +4,6 @@ opencv-contrib-python==4.2.0.34
 torch
 torchvision
 onnxruntime
-cython
-cython_bbox
 ts
+torchserve
+torch-model-archiver
