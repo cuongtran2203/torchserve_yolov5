@@ -9,8 +9,14 @@ RUN apt update & apt upgrade -y
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 RUN pip install -r service/requirements.txt
 RUN apt-get update
-EXPOSE 8080 
-EXPOSE 8081
 RUN apt-get install -y openjdk-11-jre && apt-get clean 
-RUN cd service/
-CMD ["sh","start.sh"]
+WORKDIR /service/
+
+RUN useradd -m model-server
+RUN chmod +x /service/start.sh \
+    && chown -R model-server /service
+RUN chown -R model-server /service/model-store
+USER model-server
+
+ENTRYPOINT [ "/service/start.sh"  ]
+CMD [ "serve" ]
