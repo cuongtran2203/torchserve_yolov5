@@ -248,8 +248,6 @@ class MyHandler(BaseHandler):
         self.providers = ['CPUExecutionProvider']
         self.session = onnxruntime.InferenceSession(self.model, providers=self.providers)
     def initialize(self, context):
-        
-        
         self._context=context
         self.manifest=context.manifest
         properties=context.system_properties
@@ -262,10 +260,10 @@ class MyHandler(BaseHandler):
               
         image=data[0].get("data")
         
-        # print(data)
         if image is None:
             image= data[0].get("body")
         image = Image.open(io.BytesIO(image))
+        
         img=np.array(image)
         # image= np.frombuffer(image,dtype=np.int8)
         # image=np.array_equal(y.reshape)
