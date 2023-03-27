@@ -1,0 +1,1 @@
+torch-model-archiver --model-name VehicleDetection --version 1.0 --serialized-file model_ver3.onnx --handler myhandler.py --extra-files results.py --export-path model-store -f

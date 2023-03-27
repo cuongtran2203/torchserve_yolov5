@@ -1,1 +1,0 @@
-torch-model-archiver --model-name Cuong2203 --version 1.0 --serialized-file model.onnx --handler myhandler.py --extra-files results.py --export-path model-store -f
