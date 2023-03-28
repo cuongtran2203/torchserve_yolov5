@@ -244,7 +244,7 @@ class MyHandler(BaseHandler):
     def __init__(self) :
         self._context=None
         self.initialized=False
-        self.model='model_ver3.onnx'
+        self.model='vehicle_v5n.onnx'
         self.providers = ['CPUExecutionProvider']
         self.session = onnxruntime.InferenceSession(self.model, providers=self.providers)
     def initialize(self, context):

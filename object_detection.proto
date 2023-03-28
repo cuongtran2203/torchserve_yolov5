@@ -1,0 +1,35 @@
+syntax="proto3";
+package object_detection;
+//Message type for an image 
+message Image {
+  bytes data = 1;
+  int32 width = 2;
+  int32 height = 3;
+}
+
+// Message type for a bounding box
+message BoundingBox {
+  float xmin = 1;
+  float ymin = 2;
+  float xmax = 3;
+  float ymax = 4;
+}
+
+// Message type for a detection
+message Detection {
+  string label = 1;
+  float confidence = 2;
+  BoundingBox bounding_box = 3;
+}
+
+// Message type for object detection request
+message ObjectDetectionRequest {
+  Image image = 1;
+  int32 max_detections = 2;
+  float confidence_threshold = 3;
+}
+
+// Message type for object detection response
+message ObjectDetectionResponse {
+  repeated Detection detections = 1;
+}
