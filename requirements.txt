@@ -8,4 +8,5 @@ ts
 onnx
 pyaml
 torchserve
+grpcio
 torch-model-archiver
