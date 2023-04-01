@@ -1,0 +1,329 @@
+2023-04-01T21:38:27,850 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:27,853 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:27,854 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3404
+2023-04-01T21:38:27,855 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:27,856 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:27,954 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:27,991 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:28,018 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:28,019 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:28,020 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:28,021 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:28,022 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:28,023 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:28,024 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:28,025 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:28,026 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:28,027 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:28,028 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load
+2023-04-01T21:38:28,030 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2023-04-01T21:38:28,032 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 145, in _load_handler_file
+2023-04-01T21:38:28,033 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2023-04-01T21:38:28,035 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/importlib/__init__.py", line 127, in import_module
+2023-04-01T21:38:28,038 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2023-04-01T21:38:28,039 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+2023-04-01T21:38:28,040 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+2023-04-01T21:38:28,041 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+2023-04-01T21:38:28,042 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+2023-04-01T21:38:28,043 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+2023-04-01T21:38:28,045 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+2023-04-01T21:38:28,047 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/9fac467420264d6a87081788c38918f1/myhandler.py", line 4, in <module>
+2023-04-01T21:38:28,048 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     import cv2
+2023-04-01T21:38:28,050 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/cv2/__init__.py", line 181, in <module>
+2023-04-01T21:38:28,052 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     bootstrap()
+2023-04-01T21:38:28,053 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/cv2/__init__.py", line 175, in bootstrap
+2023-04-01T21:38:28,054 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+2023-04-01T21:38:28,055 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+2023-04-01T21:38:28,056 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     py_module = importlib.import_module(module_name)
+2023-04-01T21:38:28,059 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/importlib/__init__.py", line 127, in import_module
+2023-04-01T21:38:28,060 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2023-04-01T21:38:28,061 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/cv2/gapi/__init__.py", line 301, in <module>
+2023-04-01T21:38:29,534 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:29,538 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:29,538 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3421
+2023-04-01T21:38:29,539 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:29,540 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:29,543 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:29,556 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:29,612 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:29,616 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:29,616 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:29,617 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:29,617 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:29,621 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:29,829 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:29,832 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:29,833 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3426
+2023-04-01T21:38:29,834 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:29,834 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:29,838 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:29,853 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:29,905 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:29,906 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:29,907 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:29,908 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:29,909 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:29,910 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:29,912 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:29,915 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:29,916 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:29,919 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:29,920 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load
+2023-04-01T21:38:31,113 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:31,116 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:31,117 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3475
+2023-04-01T21:38:31,117 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:31,118 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:31,122 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:31,136 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:31,177 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:31,179 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:31,179 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:31,181 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:31,182 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:31,183 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:31,184 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:31,185 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:31,186 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:31,187 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:31,478 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:31,482 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:31,483 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3490
+2023-04-01T21:38:31,483 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:31,484 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:31,486 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:31,499 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:31,530 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:31,531 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:31,533 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:31,534 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:31,535 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:31,557 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:31,558 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:31,559 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:31,561 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:32,999 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:33,003 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:33,004 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3509
+2023-04-01T21:38:33,004 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:33,005 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:33,008 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:33,025 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:33,053 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:33,054 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:33,055 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:33,056 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:33,057 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:33,057 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:33,058 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:33,059 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:33,061 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:33,062 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:33,637 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:33,641 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:33,642 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3531
+2023-04-01T21:38:33,643 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:33,644 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:33,647 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:33,664 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:33,691 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:33,692 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:33,693 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:33,693 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:33,695 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:33,696 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:33,697 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:33,698 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:33,699 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:33,700 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:35,493 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:35,496 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:35,497 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3547
+2023-04-01T21:38:35,498 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:35,498 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:35,501 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:35,514 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:35,541 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:35,542 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:35,542 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:35,544 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:35,545 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:35,546 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:35,546 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:35,547 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:35,548 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:35,550 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:37,131 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:37,134 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:37,135 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3563
+2023-04-01T21:38:37,136 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:37,136 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:37,140 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:37,150 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:37,176 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:37,177 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:37,178 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:37,178 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:37,179 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:37,180 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:37,181 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:37,182 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:37,184 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:37,184 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:37,185 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load
+2023-04-01T21:38:39,010 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:39,013 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:39,014 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3579
+2023-04-01T21:38:39,015 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:39,016 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:39,019 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:39,034 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:39,064 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:39,065 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:39,066 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:39,067 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:39,067 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:39,068 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:39,069 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:39,070 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:39,071 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:39,072 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:42,611 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:42,614 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:42,615 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3595
+2023-04-01T21:38:42,616 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:42,617 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:42,620 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:42,634 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:42,660 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:42,661 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:42,662 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:42,663 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:42,664 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:42,665 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:42,666 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:42,667 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:42,668 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:42,668 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:44,509 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:44,512 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:44,513 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3611
+2023-04-01T21:38:44,514 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:44,514 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:44,517 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:44,527 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:44,553 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:44,554 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:44,555 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:44,556 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:44,557 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:44,558 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:44,559 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:44,560 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:44,561 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:44,562 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:51,097 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:38:51,100 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:51,101 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3627
+2023-04-01T21:38:51,101 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:51,102 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:51,106 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:38:51,120 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:38:51,147 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:51,148 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:51,149 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:51,149 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:51,150 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:51,151 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:51,151 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:51,152 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:51,154 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:51,156 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:38:53,011 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:38:53,014 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:38:53,015 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3643
+2023-04-01T21:38:53,016 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:38:53,017 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:38:53,020 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:38:53,035 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:38:53,061 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:38:53,062 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:38:53,065 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:38:53,065 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:38:53,067 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:38:53,067 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:38:53,068 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:38:53,070 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:38:53,072 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:38:53,073 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:39:04,584 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:39:04,588 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:39:04,589 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3659
+2023-04-01T21:39:04,590 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:39:04,590 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:39:04,594 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:39:04,608 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:39:04,634 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:39:04,635 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:39:04,636 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:39:04,637 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:39:04,637 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:39:04,638 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:39:04,639 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:39:04,641 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:39:04,642 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:39:04,642 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:39:04,644 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load
+2023-04-01T21:39:06,501 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:39:06,504 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:39:06,505 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3675
+2023-04-01T21:39:06,506 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:39:06,507 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:39:06,510 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:39:06,523 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:39:06,552 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:39:06,553 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:39:06,554 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:39:06,554 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:39:06,555 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:39:06,556 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:39:06,557 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:39:06,558 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:39:06,559 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:39:06,560 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:39:06,560 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load
+2023-04-01T21:39:26,087 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-01T21:39:26,090 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:39:26,091 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - [PID]3691
+2023-04-01T21:39:26,092 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:39:26,093 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:39:26,097 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-01T21:39:26,112 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - model_name: LaneDetection, batchSize: 40
+2023-04-01T21:39:26,138 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:39:26,139 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:39:26,140 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:39:26,140 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:39:26,142 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:39:26,143 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:39:26,144 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:39:26,145 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:39:26,145 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:39:26,146 [INFO ] W-9000-LaneDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:39:28,016 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9001
+2023-04-01T21:39:28,019 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-01T21:39:28,020 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - [PID]3707
+2023-04-01T21:39:28,020 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-01T21:39:28,022 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-01T21:39:28,024 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9001.
+2023-04-01T21:39:28,036 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-01T21:39:28,063 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Backend worker process died.
+2023-04-01T21:39:28,064 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-01T21:39:28,065 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 221, in <module>
+2023-04-01T21:39:28,066 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     worker.run_server()
+2023-04-01T21:39:28,067 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 189, in run_server
+2023-04-01T21:39:28,068 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2023-04-01T21:39:28,070 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 154, in handle_connection
+2023-04-01T21:39:28,071 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2023-04-01T21:39:28,072 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py", line 118, in load_model
+2023-04-01T21:39:28,072 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2023-04-01T21:39:28,073 [INFO ] W-9001-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_loader.py", line 100, in load

@@ -11,6 +11,7 @@ RUN pip install -r requirements.txt
 
 ADD start.sh config.properties  service/
 ADD model-store service/model-store/
+RUN ls 
 
 WORKDIR /service/
 RUN chmod +x /service/start.sh \
@@ -18,5 +19,5 @@ RUN chmod +x /service/start.sh \
 RUN chown -R model-server /service/model-store
 USER model-server
 
-ENTRYPOINT [ "/service/start.sh"  ]
+ENTRYPOINT [ "service/start.sh"  ]
 CMD [ "serve" ]
