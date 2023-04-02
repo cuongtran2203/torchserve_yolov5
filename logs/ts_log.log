@@ -1288,3 +1288,436 @@ Model config: {"VehicleDetection": {"1.0": {"defaultVersion": true,"marName": "V
 2023-04-02T17:50:03,528 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10878.703125|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
 2023-04-02T17:50:03,529 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1495.8671875|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
 2023-04-02T17:50:03,530 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:14.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:51:05,451 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-02T17:51:05,451 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-02T17:51:06,600 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-02T17:51:06,600 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-02T17:51:06,844 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages
+Current directory: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5
+Temp directory: /tmp
+Metrics config path: /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 3166 M
+Python executable: /home/cuong/miniconda3/envs/project/bin/python
+Config file: logs/config/20230402175058068-shutdown.cfg
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/model-store
+Initial Models: VehicleDetection=VehicleDetection.mar
+Log dir: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/logs
+Metrics dir: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 26214400
+Maximum Request Size: 26214400
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: true
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/model-store
+Model config: {"VehicleDetection": {"1.0": {"defaultVersion": true,"marName": "VehicleDetection.mar","minWorkers": 1,"maxWorkers": 8,"batchSize": 40,"maxBatchDelay": 500,"responseTimeout": 50}},"LaneDetection": {"1.0": {"defaultVersion": true,"marName": "LaneDetection.mar","minWorkers": 1,"maxWorkers": 8,"batchSize": 40,"maxBatchDelay": 500,"responseTimeout": 50}}}
+2023-04-02T17:51:06,844 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages
+Current directory: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5
+Temp directory: /tmp
+Metrics config path: /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 3166 M
+Python executable: /home/cuong/miniconda3/envs/project/bin/python
+Config file: logs/config/20230402175058068-shutdown.cfg
+Inference address: http://0.0.0.0:8080
+Management address: http://0.0.0.0:8081
+Metrics address: http://0.0.0.0:8082
+Model Store: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/model-store
+Initial Models: VehicleDetection=VehicleDetection.mar
+Log dir: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/logs
+Metrics dir: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 26214400
+Maximum Request Size: 26214400
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: true
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /mnt/c/Users/Tran Cuong/Documents/project/torchserve_yolov5/model-store
+Model config: {"VehicleDetection": {"1.0": {"defaultVersion": true,"marName": "VehicleDetection.mar","minWorkers": 1,"maxWorkers": 8,"batchSize": 40,"maxBatchDelay": 500,"responseTimeout": 50}},"LaneDetection": {"1.0": {"defaultVersion": true,"marName": "LaneDetection.mar","minWorkers": 1,"maxWorkers": 8,"batchSize": 40,"maxBatchDelay": 500,"responseTimeout": 50}}}
+2023-04-02T17:51:06,861 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20230402175058068-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1680432658068,
+  "models": {
+    "VehicleDetection": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "VehicleDetection.mar",
+        "minWorkers": 1,
+        "maxWorkers": 8,
+        "batchSize": 40,
+        "maxBatchDelay": 500,
+        "responseTimeout": 50
+      }
+    }
+  }
+}
+2023-04-02T17:51:06,861 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20230402175058068-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1680432658068,
+  "models": {
+    "VehicleDetection": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "VehicleDetection.mar",
+        "minWorkers": 1,
+        "maxWorkers": 8,
+        "batchSize": 40,
+        "maxBatchDelay": 500,
+        "responseTimeout": 50
+      }
+    }
+  }
+}
+2023-04-02T17:51:06,872 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20230402175058068-shutdown.cfg
+2023-04-02T17:51:06,872 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20230402175058068-shutdown.cfg
+2023-04-02T17:51:06,876 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20230402175058068-shutdown.cfg validated successfully
+2023-04-02T17:51:06,876 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20230402175058068-shutdown.cfg validated successfully
+2023-04-02T17:51:08,508 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model VehicleDetection
+2023-04-02T17:51:08,508 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model VehicleDetection
+2023-04-02T17:51:08,508 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model VehicleDetection
+2023-04-02T17:51:08,508 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model VehicleDetection
+2023-04-02T17:51:08,509 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model VehicleDetection
+2023-04-02T17:51:08,509 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model VehicleDetection
+2023-04-02T17:51:08,510 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model VehicleDetection loaded.
+2023-04-02T17:51:08,510 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model VehicleDetection loaded.
+2023-04-02T17:51:08,511 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: VehicleDetection, count: 1
+2023-04-02T17:51:08,511 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: VehicleDetection, count: 1
+2023-04-02T17:51:08,528 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/cuong/miniconda3/envs/project/bin/python, /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-02T17:51:08,528 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/cuong/miniconda3/envs/project/bin/python, /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-02T17:51:08,532 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,532 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,634 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2023-04-02T17:51:08,634 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080
+2023-04-02T17:51:08,635 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,635 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,638 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2023-04-02T17:51:08,638 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://0.0.0.0:8081
+2023-04-02T17:51:08,638 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,638 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2023-04-02T17:51:08,640 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2023-04-02T17:51:08,640 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://0.0.0.0:8082
+2023-04-02T17:51:09,056 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:51:09,062 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:51:09,063 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]1958
+2023-04-02T17:51:09,064 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:51:09,065 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-VehicleDetection_1.0 State change null -> WORKER_STARTED
+2023-04-02T17:51:09,065 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-VehicleDetection_1.0 State change null -> WORKER_STARTED
+2023-04-02T17:51:09,065 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:51:09,076 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /tmp/.ts.sock.9000
+2023-04-02T17:51:09,076 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /tmp/.ts.sock.9000
+2023-04-02T17:51:09,100 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:51:09,105 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432669105
+2023-04-02T17:51:09,105 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432669105
+2023-04-02T17:51:09,145 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:51:09,485 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 340
+2023-04-02T17:51:09,485 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 340
+2023-04-02T17:51:09,486 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-VehicleDetection_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2023-04-02T17:51:09,486 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-VehicleDetection_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2023-04-02T17:51:09,487 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - W-9000-VehicleDetection_1.0.ms:965|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432669
+2023-04-02T17:51:09,488 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:43|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432669
+2023-04-02T17:51:10,205 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,227 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:214.09371185302734|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,228 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:24.073150634765625|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,229 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:10.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,230 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,230 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,231 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,232 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10920.08984375|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,232 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1454.47265625|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:10,233 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:13.7|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432670
+2023-04-02T17:51:24,385 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432684385
+2023-04-02T17:51:24,385 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432684385
+2023-04-02T17:51:24,389 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432684
+2023-04-02T17:51:24,432 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:42.63|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:dd1d1651-c523-4b70-a8d2-b4ed7872782f,timestamp:1680432684
+2023-04-02T17:51:24,432 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 44
+2023-04-02T17:51:24,432 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 44
+2023-04-02T17:51:24,433 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:42.81|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:dd1d1651-c523-4b70-a8d2-b4ed7872782f,timestamp:1680432684
+2023-04-02T17:51:24,445 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 687
+2023-04-02T17:51:24,448 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500540700, Backend time ns: 62373800
+2023-04-02T17:51:24,448 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500540700, Backend time ns: 62373800
+2023-04-02T17:51:24,449 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432684
+2023-04-02T17:51:24,450 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:21|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432684
+2023-04-02T17:51:24,961 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432684961
+2023-04-02T17:51:24,961 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432684961
+2023-04-02T17:51:24,964 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432684
+2023-04-02T17:51:25,010 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 47
+2023-04-02T17:51:25,010 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:45.91|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:aaab6768-9dd5-4058-a694-b0f797fd3631,timestamp:1680432685
+2023-04-02T17:51:25,010 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 47
+2023-04-02T17:51:25,011 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:46.09|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:aaab6768-9dd5-4058-a694-b0f797fd3631,timestamp:1680432685
+2023-04-02T17:51:25,011 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 552
+2023-04-02T17:51:25,012 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500516300, Backend time ns: 51255600
+2023-04-02T17:51:25,012 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500516300, Backend time ns: 51255600
+2023-04-02T17:51:25,013 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432685
+2023-04-02T17:51:25,014 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432685
+2023-04-02T17:51:25,518 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432685518
+2023-04-02T17:51:25,518 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432685518
+2023-04-02T17:51:25,520 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432685
+2023-04-02T17:51:25,548 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 28
+2023-04-02T17:51:25,547 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:27.21|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:3892fc01-aa4e-4a1d-93f1-60ec678141f7,timestamp:1680432685
+2023-04-02T17:51:25,548 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 28
+2023-04-02T17:51:25,548 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:27.36|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:3892fc01-aa4e-4a1d-93f1-60ec678141f7,timestamp:1680432685
+2023-04-02T17:51:25,549 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 534
+2023-04-02T17:51:25,550 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500507200, Backend time ns: 31911600
+2023-04-02T17:51:25,550 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500507200, Backend time ns: 31911600
+2023-04-02T17:51:25,551 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432685
+2023-04-02T17:51:25,551 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432685
+2023-04-02T17:51:26,054 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432686054
+2023-04-02T17:51:26,054 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432686054
+2023-04-02T17:51:26,056 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432686
+2023-04-02T17:51:26,089 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:26,089 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.62|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:31e56c01-5c0a-444f-af6b-d13faa8ec97e,timestamp:1680432686
+2023-04-02T17:51:26,089 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:26,090 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.76|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:31e56c01-5c0a-444f-af6b-d13faa8ec97e,timestamp:1680432686
+2023-04-02T17:51:26,091 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 539
+2023-04-02T17:51:26,092 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500301600, Backend time ns: 37582300
+2023-04-02T17:51:26,092 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500301600, Backend time ns: 37582300
+2023-04-02T17:51:26,092 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432686
+2023-04-02T17:51:26,093 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432686
+2023-04-02T17:51:26,597 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432686597
+2023-04-02T17:51:26,597 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432686597
+2023-04-02T17:51:26,600 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432686
+2023-04-02T17:51:26,632 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:26,632 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.18|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:3a7cab33-9427-4409-b3e8-3a5d5bd3dd03,timestamp:1680432686
+2023-04-02T17:51:26,632 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:26,633 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.33|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:3a7cab33-9427-4409-b3e8-3a5d5bd3dd03,timestamp:1680432686
+2023-04-02T17:51:26,633 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 538
+2023-04-02T17:51:26,634 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500499800, Backend time ns: 36991700
+2023-04-02T17:51:26,634 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500499800, Backend time ns: 36991700
+2023-04-02T17:51:26,635 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432686
+2023-04-02T17:51:26,636 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432686
+2023-04-02T17:51:27,139 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432687139
+2023-04-02T17:51:27,139 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432687139
+2023-04-02T17:51:27,141 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432687
+2023-04-02T17:51:27,174 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:27,174 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.58|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:2afc899b-e25c-4a50-980b-ede6f1d73f4b,timestamp:1680432687
+2023-04-02T17:51:27,174 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:27,175 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.72|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:2afc899b-e25c-4a50-980b-ede6f1d73f4b,timestamp:1680432687
+2023-04-02T17:51:27,176 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 537
+2023-04-02T17:51:27,177 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500513900, Backend time ns: 37630600
+2023-04-02T17:51:27,177 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500513900, Backend time ns: 37630600
+2023-04-02T17:51:27,177 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432687
+2023-04-02T17:51:27,178 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432687
+2023-04-02T17:51:27,683 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432687683
+2023-04-02T17:51:27,683 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432687683
+2023-04-02T17:51:27,685 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432687
+2023-04-02T17:51:27,712 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 27
+2023-04-02T17:51:27,712 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 27
+2023-04-02T17:51:27,712 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:26.43|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:000d6d3b-93c5-4b8b-b241-5892b11086c1,timestamp:1680432687
+2023-04-02T17:51:27,713 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:26.57|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:000d6d3b-93c5-4b8b-b241-5892b11086c1,timestamp:1680432687
+2023-04-02T17:51:27,713 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 533
+2023-04-02T17:51:27,715 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500496900, Backend time ns: 31303700
+2023-04-02T17:51:27,715 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500496900, Backend time ns: 31303700
+2023-04-02T17:51:27,715 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432687
+2023-04-02T17:51:27,716 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432687
+2023-04-02T17:51:28,219 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432688219
+2023-04-02T17:51:28,219 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432688219
+2023-04-02T17:51:28,221 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432688
+2023-04-02T17:51:28,254 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:28,253 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.35|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:80948262-f553-4676-935c-11628a24e5cc,timestamp:1680432688
+2023-04-02T17:51:28,254 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:51:28,254 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.5|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:80948262-f553-4676-935c-11628a24e5cc,timestamp:1680432688
+2023-04-02T17:51:28,254 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 537
+2023-04-02T17:51:28,256 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500393800, Backend time ns: 37136100
+2023-04-02T17:51:28,256 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500393800, Backend time ns: 37136100
+2023-04-02T17:51:28,257 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432688
+2023-04-02T17:51:28,257 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432688
+2023-04-02T17:51:28,760 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432688760
+2023-04-02T17:51:28,760 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432688760
+2023-04-02T17:51:28,762 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432688
+2023-04-02T17:51:28,795 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 34
+2023-04-02T17:51:28,795 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.68|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:fa9918e9-ebc6-46e2-aa33-d2b4968e4988,timestamp:1680432688
+2023-04-02T17:51:28,795 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 34
+2023-04-02T17:51:28,796 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.82|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:fa9918e9-ebc6-46e2-aa33-d2b4968e4988,timestamp:1680432688
+2023-04-02T17:51:28,796 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 538
+2023-04-02T17:51:28,797 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500326600, Backend time ns: 37361700
+2023-04-02T17:51:28,797 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500326600, Backend time ns: 37361700
+2023-04-02T17:51:28,798 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432688
+2023-04-02T17:51:28,799 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432688
+2023-04-02T17:51:29,301 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432689301
+2023-04-02T17:51:29,301 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432689301
+2023-04-02T17:51:29,303 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432689
+2023-04-02T17:51:29,335 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:31.2|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:5fbd503a-4898-4640-9be0-fd55c3676910,timestamp:1680432689
+2023-04-02T17:51:29,335 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 32
+2023-04-02T17:51:29,335 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 32
+2023-04-02T17:51:29,336 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:31.36|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:5fbd503a-4898-4640-9be0-fd55c3676910,timestamp:1680432689
+2023-04-02T17:51:29,336 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /0:0:0:0:0:0:0:1%0:39274 "gRPC org.pytorch.serve.grpc.inference.InferenceAPIsService/Predictions HTTP/2.0" 0 537
+2023-04-02T17:51:29,337 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500334100, Backend time ns: 36266300
+2023-04-02T17:51:29,337 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500334100, Backend time ns: 36266300
+2023-04-02T17:51:29,338 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432689
+2023-04-02T17:51:29,339 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432689
+2023-04-02T17:52:10,728 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,728 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:214.09366989135742|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,729 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:24.073192596435547|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,729 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:10.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,730 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,730 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,731 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,731 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10826.1328125|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,732 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1547.921875|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:10,732 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:14.5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432730
+2023-04-02T17:52:53,993 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432773992
+2023-04-02T17:52:53,993 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432773992
+2023-04-02T17:52:53,995 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432773
+2023-04-02T17:52:54,027 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:54,027 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:31.8|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:f486f198-be15-4ff2-8702-b0333eaa0d1b,timestamp:1680432774
+2023-04-02T17:52:54,027 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:54,028 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:31.95|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:f486f198-be15-4ff2-8702-b0333eaa0d1b,timestamp:1680432774
+2023-04-02T17:52:54,029 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35230 "POST /predictions/VehicleDetection HTTP/1.1" 200 542
+2023-04-02T17:52:54,030 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:54,031 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500541300, Backend time ns: 38167700
+2023-04-02T17:52:54,031 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500541300, Backend time ns: 38167700
+2023-04-02T17:52:54,031 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432774
+2023-04-02T17:52:54,032 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:7|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432774
+2023-04-02T17:52:54,049 [INFO ] epollEventLoopGroup-3-2 ACCESS_LOG - /127.0.0.1:35232 "POST /predictions/LaneDetection HTTP/1.1" 404 1
+2023-04-02T17:52:54,051 [INFO ] epollEventLoopGroup-3-2 TS_METRICS - Requests4XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:54,573 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432774573
+2023-04-02T17:52:54,573 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432774573
+2023-04-02T17:52:54,576 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432774
+2023-04-02T17:52:54,603 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 27
+2023-04-02T17:52:54,603 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:26.14|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:b3b3eb40-2c96-4ac0-af39-df42d95a0531,timestamp:1680432774
+2023-04-02T17:52:54,603 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 27
+2023-04-02T17:52:54,603 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:26.27|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:b3b3eb40-2c96-4ac0-af39-df42d95a0531,timestamp:1680432774
+2023-04-02T17:52:54,604 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35234 "POST /predictions/VehicleDetection HTTP/1.1" 200 532
+2023-04-02T17:52:54,604 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:54,605 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500543000, Backend time ns: 31913200
+2023-04-02T17:52:54,605 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500543000, Backend time ns: 31913200
+2023-04-02T17:52:54,605 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432774
+2023-04-02T17:52:54,606 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432774
+2023-04-02T17:52:55,117 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432775117
+2023-04-02T17:52:55,117 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432775117
+2023-04-02T17:52:55,118 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432775
+2023-04-02T17:52:55,152 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 34
+2023-04-02T17:52:55,152 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:33.41|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:c01f1306-0556-4f1a-a9ac-04c15bef5066,timestamp:1680432775
+2023-04-02T17:52:55,152 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 34
+2023-04-02T17:52:55,153 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:33.59|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:c01f1306-0556-4f1a-a9ac-04c15bef5066,timestamp:1680432775
+2023-04-02T17:52:55,153 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35236 "POST /predictions/VehicleDetection HTTP/1.1" 200 537
+2023-04-02T17:52:55,154 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:55,155 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500313100, Backend time ns: 38327700
+2023-04-02T17:52:55,155 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500313100, Backend time ns: 38327700
+2023-04-02T17:52:55,156 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432775
+2023-04-02T17:52:55,156 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432775
+2023-04-02T17:52:55,668 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432775668
+2023-04-02T17:52:55,668 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432775668
+2023-04-02T17:52:55,670 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432775
+2023-04-02T17:52:55,700 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 30
+2023-04-02T17:52:55,699 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:28.75|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:04483894-1452-42b7-a5d5-c77bdd46ee21,timestamp:1680432775
+2023-04-02T17:52:55,700 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 30
+2023-04-02T17:52:55,700 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:28.89|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:04483894-1452-42b7-a5d5-c77bdd46ee21,timestamp:1680432775
+2023-04-02T17:52:55,701 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35238 "POST /predictions/VehicleDetection HTTP/1.1" 200 533
+2023-04-02T17:52:55,701 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:55,702 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500487000, Backend time ns: 33625400
+2023-04-02T17:52:55,702 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500487000, Backend time ns: 33625400
+2023-04-02T17:52:55,703 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432775
+2023-04-02T17:52:55,703 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432775
+2023-04-02T17:52:56,217 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432776217
+2023-04-02T17:52:56,217 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432776217
+2023-04-02T17:52:56,219 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432776
+2023-04-02T17:52:56,250 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:56,250 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:56,250 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:30.23|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:c36add97-3588-4f1b-97c1-818d80d377a1,timestamp:1680432776
+2023-04-02T17:52:56,251 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35240 "POST /predictions/VehicleDetection HTTP/1.1" 200 535
+2023-04-02T17:52:56,251 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:30.38|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:c36add97-3588-4f1b-97c1-818d80d377a1,timestamp:1680432776
+2023-04-02T17:52:56,251 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:56,252 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500501500, Backend time ns: 35144600
+2023-04-02T17:52:56,252 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500501500, Backend time ns: 35144600
+2023-04-02T17:52:56,252 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432776
+2023-04-02T17:52:56,253 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432776
+2023-04-02T17:52:56,764 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432776764
+2023-04-02T17:52:56,764 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432776764
+2023-04-02T17:52:56,767 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432776
+2023-04-02T17:52:56,799 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:31.85|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:6e75e517-45b9-470f-9054-e76d98603e9d,timestamp:1680432776
+2023-04-02T17:52:56,799 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:56,799 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:56,799 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.01|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:6e75e517-45b9-470f-9054-e76d98603e9d,timestamp:1680432776
+2023-04-02T17:52:56,800 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35242 "POST /predictions/VehicleDetection HTTP/1.1" 200 537
+2023-04-02T17:52:56,800 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:56,801 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500499700, Backend time ns: 36908900
+2023-04-02T17:52:56,801 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500499700, Backend time ns: 36908900
+2023-04-02T17:52:56,801 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432776
+2023-04-02T17:52:56,802 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432776
+2023-04-02T17:52:57,315 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432777315
+2023-04-02T17:52:57,315 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432777315
+2023-04-02T17:52:57,317 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432777
+2023-04-02T17:52:57,348 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:57,348 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:30.35|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:24e4b1cd-c0a5-48a7-ab10-7f6502051f9e,timestamp:1680432777
+2023-04-02T17:52:57,348 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:57,349 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:30.49|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:24e4b1cd-c0a5-48a7-ab10-7f6502051f9e,timestamp:1680432777
+2023-04-02T17:52:57,349 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35244 "POST /predictions/VehicleDetection HTTP/1.1" 200 535
+2023-04-02T17:52:57,349 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:57,350 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500491700, Backend time ns: 34851800
+2023-04-02T17:52:57,350 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500491700, Backend time ns: 34851800
+2023-04-02T17:52:57,350 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432777
+2023-04-02T17:52:57,351 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432777
+2023-04-02T17:52:57,862 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432777862
+2023-04-02T17:52:57,862 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432777862
+2023-04-02T17:52:57,865 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432777
+2023-04-02T17:52:57,896 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:31.42|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:9b7eca7e-8bce-4701-855f-1bacc2acf811,timestamp:1680432777
+2023-04-02T17:52:57,897 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:57,897 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:57,897 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:31.59|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:9b7eca7e-8bce-4701-855f-1bacc2acf811,timestamp:1680432777
+2023-04-02T17:52:57,898 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35246 "POST /predictions/VehicleDetection HTTP/1.1" 200 536
+2023-04-02T17:52:57,898 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:57,899 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500513200, Backend time ns: 36231100
+2023-04-02T17:52:57,899 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500513200, Backend time ns: 36231100
+2023-04-02T17:52:57,899 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432777
+2023-04-02T17:52:57,900 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432777
+2023-04-02T17:52:58,410 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432778410
+2023-04-02T17:52:58,410 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432778410
+2023-04-02T17:52:58,413 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432778
+2023-04-02T17:52:58,445 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:58,445 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:32.32|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:61144136-0a1f-4902-a744-56f5abf0d00b,timestamp:1680432778
+2023-04-02T17:52:58,445 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 33
+2023-04-02T17:52:58,446 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:32.5|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:61144136-0a1f-4902-a744-56f5abf0d00b,timestamp:1680432778
+2023-04-02T17:52:58,446 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35248 "POST /predictions/VehicleDetection HTTP/1.1" 200 536
+2023-04-02T17:52:58,447 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:58,448 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500507900, Backend time ns: 37232100
+2023-04-02T17:52:58,448 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500507900, Backend time ns: 37232100
+2023-04-02T17:52:58,448 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432778
+2023-04-02T17:52:58,449 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432778
+2023-04-02T17:52:58,960 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432778960
+2023-04-02T17:52:58,960 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1680432778960
+2023-04-02T17:52:58,962 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432778
+2023-04-02T17:52:58,993 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:58,993 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:30.67|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:820ff701-6cc9-4b4c-97ef-b41f4ce0e6dc,timestamp:1680432778
+2023-04-02T17:52:58,993 [INFO ] W-9000-VehicleDetection_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 31
+2023-04-02T17:52:58,994 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:30.81|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:820ff701-6cc9-4b4c-97ef-b41f4ce0e6dc,timestamp:1680432778
+2023-04-02T17:52:58,994 [INFO ] W-9000-VehicleDetection_1.0 ACCESS_LOG - /127.0.0.1:35250 "POST /predictions/VehicleDetection HTTP/1.1" 200 535
+2023-04-02T17:52:58,995 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432773
+2023-04-02T17:52:58,996 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500538300, Backend time ns: 35395800
+2023-04-02T17:52:58,996 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500538300, Backend time ns: 35395800
+2023-04-02T17:52:58,996 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432778
+2023-04-02T17:52:58,996 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:5|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432778
+2023-04-02T17:53:10,884 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,884 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:214.09366989135742|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,885 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:24.073192596435547|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,885 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:10.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,886 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,886 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,887 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,887 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10635.3125|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,888 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1739.21875|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
+2023-04-02T17:53:10,888 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:16.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432790
