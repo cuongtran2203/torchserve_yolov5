@@ -1,0 +1,4 @@
+2023-04-02T17:45:31,021 - HandlerTime.Milliseconds:47.09|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:fee368a4-cb96-48dd-a186-dd07731aa99b,timestamp:1680432331
+2023-04-02T17:45:31,022 - PredictionTime.Milliseconds:47.26|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:fee368a4-cb96-48dd-a186-dd07731aa99b,timestamp:1680432331
+2023-04-02T17:46:46,517 - HandlerTime.Milliseconds:46.18|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:f0beeec7-561d-460a-8d76-db07fc60ad55,timestamp:1680432406
+2023-04-02T17:46:46,518 - PredictionTime.Milliseconds:46.4|#ModelName:VehicleDetection,Level:Model|#hostname:DESKTOP-F1I07BF,requestID:f0beeec7-561d-460a-8d76-db07fc60ad55,timestamp:1680432406

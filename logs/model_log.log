@@ -1,57 +1,132 @@
-2023-04-02T08:21:56,373 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-04-02T08:21:56,380 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
-2023-04-02T08:21:56,381 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]6242
-2023-04-02T08:21:56,382 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
-2023-04-02T08:21:56,383 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
-2023-04-02T08:21:56,413 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-04-02T08:21:56,507 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
-2023-04-02T08:23:28,052 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680398608
-2023-04-02T08:23:28,089 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
-2023-04-02T08:23:28,090 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-04-02T08:23:28,091 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
-2023-04-02T08:23:28,092 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
-2023-04-02T08:23:28,093 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 330, in handle
-2023-04-02T08:23:28,093 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
-2023-04-02T08:23:28,094 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6dd3ece0641d4ff6832c34736435b274/myhandler.py", line 47, in preprocess
-2023-04-02T08:23:28,095 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = letterbox(img, 640, stride=32, auto=True)[0]
-2023-04-02T08:23:28,095 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6dd3ece0641d4ff6832c34736435b274/process.py", line 225, in letterbox
-2023-04-02T08:23:28,096 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
-2023-04-02T08:23:28,098 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'cv2' is not defined
-2023-04-02T08:25:12,916 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-04-02T08:25:12,920 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
-2023-04-02T08:25:12,920 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]6453
-2023-04-02T08:25:12,921 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
-2023-04-02T08:25:12,922 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
-2023-04-02T08:25:12,946 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-04-02T08:25:12,994 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
-2023-04-02T08:25:41,128 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680398741
-2023-04-02T08:25:41,145 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
-2023-04-02T08:25:41,146 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-04-02T08:25:41,146 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
-2023-04-02T08:25:41,147 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
-2023-04-02T08:25:41,148 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 330, in handle
-2023-04-02T08:25:41,148 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
-2023-04-02T08:25:41,149 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/8dbab09127504bdb9bafc4dd9717c81b/myhandler.py", line 47, in preprocess
-2023-04-02T08:25:41,150 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = letterbox(img, 640, stride=32, auto=True)[0]
-2023-04-02T08:25:41,150 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/8dbab09127504bdb9bafc4dd9717c81b/process.py", line 225, in letterbox
-2023-04-02T08:25:41,151 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
-2023-04-02T08:25:41,153 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'cv2' is not defined
-2023-04-02T08:26:32,807 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-04-02T08:26:32,812 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
-2023-04-02T08:26:32,813 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]6613
-2023-04-02T08:26:32,815 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
-2023-04-02T08:26:32,816 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
-2023-04-02T08:26:32,843 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-04-02T08:26:32,884 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
-2023-04-02T08:27:27,696 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680398847
-2023-04-02T08:27:27,710 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
-2023-04-02T08:27:27,712 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-04-02T08:27:27,712 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
-2023-04-02T08:27:27,713 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
-2023-04-02T08:27:27,714 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 330, in handle
-2023-04-02T08:27:27,715 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
-2023-04-02T08:27:27,716 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/3a4ae986b56d4afaaa744ee919743dae/myhandler.py", line 47, in preprocess
-2023-04-02T08:27:27,717 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = letterbox(img, 640, stride=32, auto=True)[0]
-2023-04-02T08:27:27,718 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/3a4ae986b56d4afaaa744ee919743dae/process.py", line 225, in letterbox
-2023-04-02T08:27:27,719 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
-2023-04-02T08:27:27,720 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'cv2' is not defined
+2023-04-02T17:41:35,560 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:41:35,564 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:41:35,565 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]734
+2023-04-02T17:41:35,565 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:41:35,566 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:41:35,594 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:41:35,641 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:41:46,555 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432106
+2023-04-02T17:41:46,576 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2023-04-02T17:41:46,578 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:41:46,578 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
+2023-04-02T17:41:46,579 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2023-04-02T17:41:46,580 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 330, in handle
+2023-04-02T17:41:46,581 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2023-04-02T17:41:46,582 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/bcec7a487045499aa1510d99b1ae9670/myhandler.py", line 47, in preprocess
+2023-04-02T17:41:46,582 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = letterbox(img, 640, stride=32, auto=True)[0]
+2023-04-02T17:41:46,583 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/bcec7a487045499aa1510d99b1ae9670/process.py", line 225, in letterbox
+2023-04-02T17:41:46,584 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
+2023-04-02T17:41:46,585 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'cv2' is not defined
+2023-04-02T17:42:20,567 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:42:20,571 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:42:20,572 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]881
+2023-04-02T17:42:20,572 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:42:20,573 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:42:20,601 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:42:20,643 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:42:33,494 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432153
+2023-04-02T17:42:33,507 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2023-04-02T17:42:33,508 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:42:33,510 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
+2023-04-02T17:42:33,511 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2023-04-02T17:42:33,512 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 330, in handle
+2023-04-02T17:42:33,513 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2023-04-02T17:42:33,514 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6a10e7a1abd94be98d146a5235a52d17/myhandler.py", line 47, in preprocess
+2023-04-02T17:42:33,514 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = letterbox(img, 640, stride=32, auto=True)[0]
+2023-04-02T17:42:33,515 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6a10e7a1abd94be98d146a5235a52d17/process.py", line 226, in letterbox
+2023-04-02T17:42:33,517 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     im = cv2.resize(im, new_unpad, interpolation=cv2.INTER_LINEAR)
+2023-04-02T17:42:33,517 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - AttributeError: module 'cv2' has no attribute 'resize'
+2023-04-02T17:43:51,437 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:43:51,440 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:43:51,442 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]1049
+2023-04-02T17:43:51,443 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:43:51,443 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:43:51,472 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:43:51,517 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:44:05,139 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432245
+2023-04-02T17:44:05,216 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2023-04-02T17:44:05,217 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:44:05,218 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
+2023-04-02T17:44:05,218 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2023-04-02T17:44:05,219 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 334, in handle
+2023-04-02T17:44:05,220 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     output = self.postprocess(output)
+2023-04-02T17:44:05,220 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6d3e313c16124843bab26a4b007a52c7/myhandler.py", line 64, in postprocess
+2023-04-02T17:44:05,221 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     y = non_max_suppression(preds, 0.25, 0.45)[0]
+2023-04-02T17:44:05,222 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/6d3e313c16124843bab26a4b007a52c7/process.py", line 140, in non_max_suppression
+2023-04-02T17:44:05,222 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     t = time.time()
+2023-04-02T17:44:05,223 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'time' is not defined
+2023-04-02T17:44:49,491 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:44:49,495 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:44:49,496 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]1215
+2023-04-02T17:44:49,498 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:44:49,500 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:44:49,529 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:44:49,577 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:44:56,869 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432296
+2023-04-02T17:44:56,935 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2023-04-02T17:44:56,936 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:44:56,937 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/service.py", line 120, in predict
+2023-04-02T17:44:56,938 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2023-04-02T17:44:56,938 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 334, in handle
+2023-04-02T17:44:56,939 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     output = self.postprocess(output)
+2023-04-02T17:44:56,940 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/60e61583de6d40d08bca416871c3c04f/myhandler.py", line 64, in postprocess
+2023-04-02T17:44:56,941 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     y = non_max_suppression(preds, 0.25, 0.45)[0]
+2023-04-02T17:44:56,942 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/tmp/models/60e61583de6d40d08bca416871c3c04f/process.py", line 187, in non_max_suppression
+2023-04-02T17:44:56,943 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     i = torchvision.ops.nms(boxes, scores, iou_thres)  # NMS
+2023-04-02T17:44:56,944 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - NameError: name 'torchvision' is not defined
+2023-04-02T17:45:25,686 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:45:25,690 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:45:25,692 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]1380
+2023-04-02T17:45:25,692 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:45:25,693 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:45:25,721 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:45:25,763 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:45:30,973 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432330
+2023-04-02T17:45:31,022 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Unable to serialize model output.
+2023-04-02T17:45:31,023 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:45:31,024 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 128, in create_predict_response
+2023-04-02T17:45:31,024 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     json_value = json.dumps(val, indent=2).encode("utf-8")
+2023-04-02T17:45:31,025 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/__init__.py", line 234, in dumps
+2023-04-02T17:45:31,026 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     return cls(
+2023-04-02T17:45:31,027 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 201, in encode
+2023-04-02T17:45:31,027 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     chunks = list(chunks)
+2023-04-02T17:45:31,028 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 429, in _iterencode
+2023-04-02T17:45:31,029 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from _iterencode_list(o, _current_indent_level)
+2023-04-02T17:45:31,030 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 325, in _iterencode_list
+2023-04-02T17:45:31,031 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from chunks
+2023-04-02T17:45:31,032 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 405, in _iterencode_dict
+2023-04-02T17:45:31,033 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from chunks
+2023-04-02T17:45:31,033 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 438, in _iterencode
+2023-04-02T17:45:31,034 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     o = _default(o)
+2023-04-02T17:45:31,034 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 179, in default
+2023-04-02T17:45:31,035 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     raise TypeError(f'Object of type {o.__class__.__name__} '
+2023-04-02T17:45:31,036 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - TypeError: Object of type ndarray is not JSON serializable
+2023-04-02T17:46:42,283 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-04-02T17:46:42,287 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Successfully loaded /home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2023-04-02T17:46:42,289 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - [PID]1557
+2023-04-02T17:46:42,290 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Torch worker started.
+2023-04-02T17:46:42,291 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Python runtime: 3.8.16
+2023-04-02T17:46:42,312 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-04-02T17:46:42,356 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - model_name: VehicleDetection, batchSize: 40
+2023-04-02T17:46:46,471 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Backend received inference at: 1680432406
+2023-04-02T17:46:46,520 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Unable to serialize model output.
+2023-04-02T17:46:46,520 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2023-04-02T17:46:46,521 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 128, in create_predict_response
+2023-04-02T17:46:46,522 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     json_value = json.dumps(val, indent=2).encode("utf-8")
+2023-04-02T17:46:46,522 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/__init__.py", line 234, in dumps
+2023-04-02T17:46:46,523 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     return cls(
+2023-04-02T17:46:46,524 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 201, in encode
+2023-04-02T17:46:46,526 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     chunks = list(chunks)
+2023-04-02T17:46:46,527 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 429, in _iterencode
+2023-04-02T17:46:46,527 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from _iterencode_list(o, _current_indent_level)
+2023-04-02T17:46:46,528 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 325, in _iterencode_list
+2023-04-02T17:46:46,529 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from chunks
+2023-04-02T17:46:46,529 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 405, in _iterencode_dict
+2023-04-02T17:46:46,530 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from chunks
+2023-04-02T17:46:46,531 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 325, in _iterencode_list
+2023-04-02T17:46:46,531 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     yield from chunks
+2023-04-02T17:46:46,532 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 438, in _iterencode
+2023-04-02T17:46:46,533 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     o = _default(o)
+2023-04-02T17:46:46,534 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -   File "/home/cuong/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 179, in default
+2023-04-02T17:46:46,535 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG -     raise TypeError(f'Object of type {o.__class__.__name__} '
+2023-04-02T17:46:46,536 [INFO ] W-9000-VehicleDetection_1.0-stdout MODEL_LOG - TypeError: Object of type float32 is not JSON serializable

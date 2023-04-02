@@ -1,3 +1,6 @@
-2023-04-02T08:23:28,094 - /127.0.0.1:60368 "POST /predictions/VehicleDetection HTTP/1.1" 503 559
-2023-04-02T08:25:41,149 - /127.0.0.1:60370 "POST /predictions/VehicleDetection HTTP/1.1" 503 534
-2023-04-02T08:27:27,715 - /127.0.0.1:60372 "POST /predictions/VehicleDetection HTTP/1.1" 503 535
+2023-04-02T17:41:46,582 - /127.0.0.1:35212 "POST /predictions/VehicleDetection HTTP/1.1" 503 543
+2023-04-02T17:42:33,512 - /127.0.0.1:35214 "POST /predictions/VehicleDetection HTTP/1.1" 503 533
+2023-04-02T17:44:05,220 - /127.0.0.1:35218 "POST /predictions/VehicleDetection HTTP/1.1" 503 598
+2023-04-02T17:44:56,939 - /127.0.0.1:35220 "POST /predictions/VehicleDetection HTTP/1.1" 503 586
+2023-04-02T17:45:31,026 - /127.0.0.1:35222 "POST /predictions/VehicleDetection HTTP/1.1" 503 568
+2023-04-02T17:46:46,521 - /127.0.0.1:35224 "POST /predictions/VehicleDetection HTTP/1.1" 503 565
