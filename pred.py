@@ -33,18 +33,18 @@ if __name__ == '__main__':
     count=0
     for i in range(10):
         time_start=time.time()
-        req = requests.post("http://localhost:8080/predictions/VehicleDetection", data=image_as_bytes)
-        if count%5000==0:
-            rep1=requests.post("http://localhost:8080/predictions/LaneDetection", data=image_as_bytes)
-            count+=1
-        # response = infer(stub, 'VehicleDetection', image_as_bytes)
-        # print(response)
+        # req = requests.post("http://localhost:8080/predictions/VehicleDetection", data=image_as_bytes)
+        # if count%5000==0:
+        #     rep1=requests.post("http://localhost:8080/predictions/LaneDetection", data=image_as_bytes)
+        #     count+=1
+        response = infer(stub, 'VehicleDetection', image_as_bytes)
+        print(response)
             
-        if req.status_code == 200: 
-            res = req.json()
-            res2=rep1.json()
-            print(res)
-            print(res2)
+        # if req.status_code == 200: 
+        #     res = req.json()
+        #     res2=rep1.json()
+        #     print(res)
+        #     print(res2)
         took = time.time() -time_start
         times.append(took)
         print(f'Took \t: {took}')

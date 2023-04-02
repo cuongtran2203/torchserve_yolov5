@@ -72,6 +72,7 @@ class MyHandler(BaseHandler):
             online_ids = []
             online_scores = []
             cls=y[:,5]
+            box_int=[]
             for t,box,cl in zip(online_targets,bbox,cls):
                 tlwh = t.tlwh
                 tid = t.track_id              
@@ -79,8 +80,9 @@ class MyHandler(BaseHandler):
                 online_ids.append(tid)
                 online_scores.append(t.score)      
                 _box=list(map(int,box))
+                box_int.append(_box)
                 
-            res.append({"label":cls,"bbox":_box,"score":online_scores,"id online":online_ids})
+            res.append({"label":cls,"bbox":box_int,"score":online_scores,"id online":online_ids})
         return [res]
     # def handle(self, data, context):
     #     if not self.initialized:
