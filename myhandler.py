@@ -85,7 +85,7 @@ class MyHandler(BaseHandler):
                 cls_int.append(int(cl))
                 
                 
-            res.append({"label":list(cls_int),"bbox":list(box_int),"score":str(online_scores),"id online":online_ids})
+            res.append({"label":list(cls_int),"bbox":list(box_int),"id online":online_ids})
         return [res]
     # def handle(self, data, context):
     #     if not self.initialized:

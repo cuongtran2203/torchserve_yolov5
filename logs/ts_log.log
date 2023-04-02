@@ -1268,3 +1268,23 @@ Model config: {"VehicleDetection": {"1.0": {"defaultVersion": true,"marName": "V
 2023-04-02T17:48:05,380 [DEBUG] W-9000-VehicleDetection_1.0 org.pytorch.serve.job.Job - Waiting time ns: 500474400, Backend time ns: 53886300
 2023-04-02T17:48:05,381 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - QueueTime.ms:500|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432485
 2023-04-02T17:48:05,381 [INFO ] W-9000-VehicleDetection_1.0 TS_METRICS - WorkerThreadTime.ms:8|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432485
+2023-04-02T17:49:03,813 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,835 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:214.09366989135742|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,836 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:24.073192596435547|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,837 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:10.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,838 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,838 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,839 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,840 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10870.76953125|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,840 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1503.80859375|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:49:03,841 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:14.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432543
+2023-04-02T17:50:03,521 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,522 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:214.09366989135742|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,524 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:24.073192596435547|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,526 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:10.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,527 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,527 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,528 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,528 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:10878.703125|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,529 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:1495.8671875|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603
+2023-04-02T17:50:03,530 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:14.1|#Level:Host|#hostname:DESKTOP-F1I07BF,timestamp:1680432603

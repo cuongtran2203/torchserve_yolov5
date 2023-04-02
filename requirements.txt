@@ -10,3 +10,6 @@ pyaml
 torchserve
 grpcio
 torch-model-archiver
+cython
+cython_bbox
+lap
